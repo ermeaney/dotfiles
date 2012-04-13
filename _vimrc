@@ -239,7 +239,8 @@ if has("gui_running")
     " Remove toolbar
     set guioptions-=T
 else
-    colorscheme torte
+    "colorscheme torte
+    colorscheme solarized
 endif
 
 " Paste from clipboard
