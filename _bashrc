@@ -174,3 +174,11 @@ export GIT_EDITOR="$vim"
 export PS1="$PS1\$(parse_git_branch)\$(parse_svn_branch) "
 export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PROJECT_HOME="$HOME/Projects"
+
+#nodejs stuff
+NPM_PACKAGES="$HOME/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"
+unset MANPATH
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+NODE_PATH="$NPM_PACKAGES/lib:$NODE_PATH"
